@@ -17,42 +17,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="j9c-Kr-b22">
-                                <rect key="frame" x="155" y="602" width="65" height="45"/>
-                                <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="21t-k4-pco">
-                                        <rect key="frame" x="0.0" y="0.0" width="65" height="45"/>
-                                        <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="zo8-Ez-BJS">
-                                                <rect key="frame" x="0.0" y="0.0" width="65" height="45"/>
-                                                <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="03z-gX-wCg">
-                                                        <rect key="frame" x="0.0" y="0.0" width="65" height="45"/>
-                                                        <color key="backgroundColor" red="0.40000000600000002" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="45" id="4MN-Qk-CSw"/>
-                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="65" id="j4A-t4-EPf"/>
-                                                            <constraint firstAttribute="width" constant="65" id="pZW-8o-xVF"/>
-                                                        </constraints>
-                                                        <state key="normal" title="DRAW"/>
-                                                    </button>
-                                                </subviews>
-                                            </stackView>
-                                        </subviews>
-                                    </stackView>
-                                </subviews>
-                            </stackView>
                             <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gj0-e2-Bxv">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </arscnView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bOc-JK-eSP">
+                                <rect key="frame" x="154.5" y="602" width="65" height="45"/>
+                                <color key="backgroundColor" red="0.40000000600000002" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="teb-LP-HeE"/>
+                                    <constraint firstAttribute="width" constant="65" id="yhQ-wm-llH"/>
+                                </constraints>
+                                <state key="normal" title="DRAW"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="gj0-e2-Bxv" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Ab5-e4-LcF"/>
                             <constraint firstItem="gj0-e2-Bxv" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Dbo-Cs-N5s"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bOc-JK-eSP" secondAttribute="bottom" constant="20" id="Vt9-wU-PhS"/>
                             <constraint firstItem="gj0-e2-Bxv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="YKg-LF-gde"/>
                             <constraint firstItem="gj0-e2-Bxv" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Zjj-b7-xr7"/>
-                            <constraint firstItem="j9c-Kr-b22" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jZP-DU-I8r"/>
+                            <constraint firstItem="bOc-JK-eSP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sux-4G-Dsn"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
